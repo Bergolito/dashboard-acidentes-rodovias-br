@@ -1,0 +1,282 @@
+,tipo_acidente,qtd,ano
+0,Colisão traseira,33501,2007
+1,Colisão lateral,20371,2007
+2,Saída de Pista,19531,2007
+3,Colisão Transversal,11821,2007
+4,Colisão com objeto fixo,8186,2007
+5,Capotamento,6943,2007
+6,Tombamento,6147,2007
+7,Colisão frontal,4581,2007
+8,Atropelamento de pessoa,3852,2007
+9,Atropelamento de animal,3563,2007
+10,Queda de motocicleta / bicicleta / veículo,3036,2007
+11,Colisão com bicicleta,2468,2007
+12,Colisão com objeto móvel,1517,2007
+13,Derramamento de Carga,854,2007
+14,Danos Eventuais,848,2007
+15,Incêndio,456,2007
+0,Colisão traseira,37710,2008
+1,Colisão lateral,23679,2008
+2,Saída de Pista,21237,2008
+3,Colisão Transversal,13248,2008
+4,Colisão com objeto fixo,8732,2008
+5,Capotamento,7242,2008
+6,Tombamento,5997,2008
+7,Colisão frontal,4742,2008
+8,Atropelamento de pessoa,4465,2008
+9,Atropelamento de animal,3868,2008
+10,Queda de motocicleta / bicicleta / veículo,3664,2008
+11,Colisão com bicicleta,2406,2008
+12,Colisão com objeto móvel,1604,2008
+13,Danos Eventuais,1115,2008
+14,Derramamento de Carga,844,2008
+15,Incêndio,490,2008
+0,Colisão traseira,44130,2009
+1,Colisão lateral,25831,2009
+2,Saída de Pista,24331,2009
+3,Colisão Transversal,14901,2009
+4,Colisão com objeto fixo,10547,2009
+5,Capotamento,7694,2009
+6,Tombamento,6162,2009
+7,Colisão frontal,5183,2009
+8,Atropelamento de pessoa,4797,2009
+9,Queda de motocicleta / bicicleta / veículo,4725,2009
+10,Atropelamento de animal,3712,2009
+11,Colisão com bicicleta,2231,2009
+12,Colisão com objeto móvel,1738,2009
+13,Danos Eventuais,1219,2009
+14,Derramamento de Carga,887,2009
+15,Incêndio,558,2009
+0,Colisão traseira,52681,2010
+1,Colisão lateral,30676,2010
+2,Saída de Pista,27082,2010
+3,Colisão Transversal,17749,2010
+4,Colisão com objeto fixo,11215,2010
+5,Capotamento,8578,2010
+6,Tombamento,6867,2010
+7,Colisão frontal,6234,2010
+8,Queda de motocicleta / bicicleta / veículo,5547,2010
+9,Atropelamento de pessoa,5300,2010
+10,Atropelamento de animal,4251,2010
+11,Colisão com bicicleta,2280,2010
+12,Colisão com objeto móvel,1961,2010
+13,Danos Eventuais,1316,2010
+14,Derramamento de Carga,1058,2010
+15,Incêndio,674,2010
+0,Colisão traseira,55927,2011
+1,Colisão lateral,33216,2011
+2,Saída de Pista,27265,2011
+3,Colisão Transversal,19446,2011
+4,Colisão com objeto fixo,11384,2011
+5,Capotamento,8766,2011
+6,Tombamento,6969,2011
+7,Colisão frontal,6589,2011
+8,Queda de motocicleta / bicicleta / veículo,6133,2011
+9,Atropelamento de pessoa,5090,2011
+10,Atropelamento de animal,4446,2011
+11,Colisão com bicicleta,2046,2011
+12,Colisão com objeto móvel,1845,2011
+13,Danos Eventuais,1342,2011
+14,Derramamento de Carga,1071,2011
+15,Incêndio,791,2011
+0,Colisão traseira,55286,2012
+1,Colisão lateral,31756,2012
+2,Saída de Pista,24764,2012
+3,Colisão Transversal,18720,2012
+4,Colisão com objeto fixo,10628,2012
+5,Capotamento,8415,2012
+6,Tombamento,7242,2012
+7,Colisão frontal,6473,2012
+8,Queda de motocicleta / bicicleta / veículo,5891,2012
+9,Atropelamento de pessoa,4689,2012
+10,Atropelamento de animal,4290,2012
+11,Colisão com objeto móvel,1732,2012
+12,Colisão com bicicleta,1714,2012
+13,Danos Eventuais,1101,2012
+14,Derramamento de Carga,1009,2012
+15,Incêndio,858,2012
+0,Colisão traseira,56006,2013
+1,Colisão lateral,32256,2013
+2,Saída de Pista,27442,2013
+3,Colisão Transversal,18873,2013
+4,Colisão com objeto fixo,10061,2013
+5,Capotamento,7926,2013
+6,Tombamento,6981,2013
+7,Colisão frontal,6797,2013
+8,Queda de motocicleta / bicicleta / veículo,5737,2013
+9,Atropelamento de pessoa,4420,2013
+10,Atropelamento de animal,4097,2013
+11,Colisão com objeto móvel,1672,2013
+12,Colisão com bicicleta,1577,2013
+13,Danos Eventuais,1033,2013
+14,Derramamento de Carga,973,2013
+15,Incêndio,897,2013
+0,Colisão traseira,49396,2014
+1,Colisão lateral,27944,2014
+2,Saída de Pista,25232,2014
+3,Colisão Transversal,17940,2014
+4,Colisão com objeto fixo,9155,2014
+5,Capotamento,7425,2014
+6,Colisão frontal,6874,2014
+7,Tombamento,6808,2014
+8,Queda de motocicleta / bicicleta / veículo,5783,2014
+9,Atropelamento de pessoa,4152,2014
+10,Atropelamento de animal,3174,2014
+11,Colisão com objeto móvel,1372,2014
+12,Colisão com bicicleta,1346,2014
+13,Derramamento de Carga,891,2014
+14,Incêndio,870,2014
+15,Danos Eventuais,839,2014
+0,Colisão traseira,30314,2015
+1,Saída de Pista,19771,2015
+2,Colisão lateral,17037,2015
+3,Colisão Transversal,13140,2015
+4,Colisão com objeto fixo,7621,2015
+5,Capotamento,6551,2015
+6,Queda de motocicleta / bicicleta / veículo,5905,2015
+7,Colisão frontal,5721,2015
+8,Tombamento,5630,2015
+9,Atropelamento de pessoa,3662,2015
+10,Atropelamento de animal,2639,2015
+11,Colisão com bicicleta,1245,2015
+12,Colisão com objeto móvel,912,2015
+13,Incêndio,878,2015
+14,Derramamento de Carga,603,2015
+15,Danos Eventuais,532,2015
+0,Colisão traseira,19142,2016
+1,Saída de Pista,16263,2016
+2,Colisão lateral,11215,2016
+3,Colisão Transversal,10670,2016
+4,Capotamento,6777,2016
+5,Colisão com objeto fixo,6679,2016
+6,Queda de motocicleta / bicicleta / veículo,6038,2016
+7,Colisão frontal,5251,2016
+8,Tombamento,5080,2016
+9,Atropelamento de pessoa,3520,2016
+10,Atropelamento de animal,2178,2016
+11,Colisão com bicicleta,1235,2016
+12,Incêndio,984,2016
+13,Colisão com objeto móvel,564,2016
+14,Derramamento de Carga,436,2016
+15,Danos Eventuais,331,2016
+0,Colisão traseira,16149,2017
+1,Saída de leito carroçável,15679,2017
+2,Colisão lateral,10599,2017
+3,Colisão transversal,10208,2017
+4,Colisão com objeto estático,7329,2017
+5,Tombamento,6118,2017
+6,Capotamento,5628,2017
+7,Colisão frontal,4974,2017
+8,Atropelamento de Pedestre,3630,2017
+9,Queda de ocupante de veículo,3622,2017
+10,Atropelamento de Animal,2014,2017
+11,Engavetamento,1196,2017
+12,Incêndio,1055,2017
+13,Colisão com objeto em movimento,627,2017
+14,Derramamento de carga,372,2017
+15,Danos eventuais,366,2017
+16,Colisão com objeto,1,2017
+0,Colisão traseira,12947,2018
+1,Saída de leito carroçável,11335,2018
+2,Colisão transversal,8619,2018
+3,Colisão lateral,8348,2018
+4,Tombamento,5174,2018
+5,Colisão com objeto estático,5061,2018
+6,Colisão frontal,4585,2018
+7,Atropelamento de Pedestre,3375,2018
+8,Queda de ocupante de veículo,3033,2018
+9,Capotamento,2814,2018
+10,Atropelamento de Animal,1237,2018
+11,Engavetamento,992,2018
+12,Incêndio,931,2018
+13,Colisão com objeto em movimento,399,2018
+14,Derramamento de carga,236,2018
+15,Danos eventuais,223,2018
+16,Colisão lateral mesmo sentido,1,2018
+0,Colisão traseira,13134,2019
+1,Saída de leito carroçável,10312,2019
+2,Colisão transversal,8784,2019
+3,Colisão lateral,8347,2019
+4,Tombamento,5161,2019
+5,Colisão com objeto estático,4464,2019
+6,Colisão frontal,4409,2019
+7,Atropelamento de Pedestre,3384,2019
+8,Queda de ocupante de veículo,3324,2019
+9,Capotamento,2279,2019
+10,Atropelamento de Animal,1243,2019
+11,Incêndio,1115,2019
+12,Engavetamento,922,2019
+13,Colisão com objeto em movimento,313,2019
+14,Danos eventuais,182,2019
+15,Derramamento de carga,166,2019
+16,Eventos atípicos,1,2019
+17,Colisão lateral sentido oposto,1,2019
+0,Colisão traseira,11463,2020
+1,Saída de leito carroçável,10494,2020
+2,Colisão transversal,7822,2020
+3,Colisão lateral,7439,2020
+4,Tombamento,5565,2020
+5,Colisão com objeto estático,4889,2020
+6,Colisão frontal,4431,2020
+7,Atropelamento de Pedestre,2843,2020
+8,Queda de ocupante de veículo,2804,2020
+9,Capotamento,1860,2020
+10,Incêndio,1177,2020
+11,Atropelamento de Animal,1159,2020
+12,Engavetamento,898,2020
+13,Colisão com objeto em movimento,255,2020
+14,Danos eventuais,232,2020
+15,Derramamento de carga,201,2020
+16,Colisão com objeto,27,2020
+17,Colisão lateral mesmo sentido,12,2020
+18,Colisão lateral sentido oposto,9,2020
+19,Eventos atípicos,5,2020
+0,Colisão traseira,12315,2021
+1,Saída de leito carroçável,10657,2021
+2,Colisão transversal,8021,2021
+3,Tombamento,5575,2021
+4,Colisão lateral mesmo sentido,5572,2021
+5,Colisão com objeto,4910,2021
+6,Colisão frontal,4346,2021
+7,Atropelamento de Pedestre,2912,2021
+8,Queda de ocupante de veículo,2594,2021
+9,Capotamento,1752,2021
+10,Colisão lateral sentido oposto,1609,2021
+11,Incêndio,1174,2021
+12,Engavetamento,1054,2021
+13,Atropelamento de Animal,978,2021
+14,Colisão lateral,676,2021
+15,Eventos atípicos,267,2021
+16,Derramamento de carga,156,2021
+0,Colisão traseira,12089,2022
+1,Saída de leito carroçável,10502,2022
+2,Colisão transversal,8008,2022
+3,Colisão lateral mesmo sentido,6239,2022
+4,Tombamento,5515,2022
+5,Colisão com objeto,4764,2022
+6,Colisão frontal,4467,2022
+7,Atropelamento de Pedestre,3045,2022
+8,Queda de ocupante de veículo,2756,2022
+9,Colisão lateral sentido oposto,1775,2022
+10,Capotamento,1563,2022
+11,Incêndio,1305,2022
+12,Atropelamento de Animal,1072,2022
+13,Engavetamento,1021,2022
+14,Eventos atípicos,339,2022
+15,Derramamento de carga,146,2022
+0,Colisão traseira,12909,2023
+1,Saída de leito carroçável,10200,2023
+2,Colisão transversal,8470,2023
+3,Colisão lateral mesmo sentido,7002,2023
+4,Tombamento,5699,2023
+5,Colisão com objeto,4861,2023
+6,Colisão frontal,4632,2023
+7,Atropelamento de Pedestre,3133,2023
+8,Queda de ocupante de veículo,3101,2023
+9,Colisão lateral sentido oposto,2018,2023
+10,Capotamento,1504,2023
+11,Incêndio,1463,2023
+12,Engavetamento,1248,2023
+13,Atropelamento de Animal,1129,2023
+14,Eventos atípicos,285,2023
+15,Derramamento de carga,110,2023
