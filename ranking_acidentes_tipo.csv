@@ -1,0 +1,148 @@
+,tipo_acidente,qtd,ano
+0,Colisão traseira,33501,2007
+1,Colisão traseira,37710,2008
+2,Colisão traseira,44130,2009
+3,Colisão traseira,52681,2010
+4,Colisão traseira,55927,2011
+5,Colisão traseira,55286,2012
+6,Colisão traseira,56006,2013
+7,Colisão traseira,49396,2014
+8,Colisão traseira,30314,2015
+9,Colisão traseira,19142,2016
+10,Colisão traseira,16149,2017
+11,Colisão traseira,12947,2018
+12,Colisão traseira,13134,2019
+13,Colisão traseira,11463,2020
+14,Colisão traseira,12315,2021
+15,Colisão traseira,12089,2022
+16,Colisão traseira,12909,2023
+17,Saída de leito carroçável,15679,2017
+18,Saída de leito carroçável,11335,2018
+19,Saída de leito carroçável,10312,2019
+20,Saída de leito carroçável,10494,2020
+21,Saída de leito carroçável,10657,2021
+22,Saída de leito carroçável,10502,2022
+23,Saída de leito carroçável,10200,2023
+24,Colisão transversal,10208,2017
+25,Colisão transversal,8619,2018
+26,Colisão transversal,8784,2019
+27,Colisão transversal,7822,2020
+28,Colisão transversal,8021,2021
+29,Colisão transversal,8008,2022
+30,Colisão transversal,8470,2023
+31,Colisão lateral mesmo sentido,1,2018
+32,Colisão lateral mesmo sentido,12,2020
+33,Colisão lateral mesmo sentido,5572,2021
+34,Colisão lateral mesmo sentido,6239,2022
+35,Colisão lateral mesmo sentido,7002,2023
+36,Tombamento,6147,2007
+37,Tombamento,5997,2008
+38,Tombamento,6162,2009
+39,Tombamento,6867,2010
+40,Tombamento,6969,2011
+41,Tombamento,7242,2012
+42,Tombamento,6981,2013
+43,Tombamento,6808,2014
+44,Tombamento,5630,2015
+45,Tombamento,5080,2016
+46,Tombamento,6118,2017
+47,Tombamento,5174,2018
+48,Tombamento,5161,2019
+49,Tombamento,5565,2020
+50,Tombamento,5575,2021
+51,Tombamento,5515,2022
+52,Tombamento,5699,2023
+53,Colisão com objeto,1,2017
+54,Colisão com objeto,27,2020
+55,Colisão com objeto,4910,2021
+56,Colisão com objeto,4764,2022
+57,Colisão com objeto,4861,2023
+58,Colisão frontal,4581,2007
+59,Colisão frontal,4742,2008
+60,Colisão frontal,5183,2009
+61,Colisão frontal,6234,2010
+62,Colisão frontal,6589,2011
+63,Colisão frontal,6473,2012
+64,Colisão frontal,6797,2013
+65,Colisão frontal,6874,2014
+66,Colisão frontal,5721,2015
+67,Colisão frontal,5251,2016
+68,Colisão frontal,4974,2017
+69,Colisão frontal,4585,2018
+70,Colisão frontal,4409,2019
+71,Colisão frontal,4431,2020
+72,Colisão frontal,4346,2021
+73,Colisão frontal,4467,2022
+74,Colisão frontal,4632,2023
+75,Atropelamento de Pedestre,3630,2017
+76,Atropelamento de Pedestre,3375,2018
+77,Atropelamento de Pedestre,3384,2019
+78,Atropelamento de Pedestre,2843,2020
+79,Atropelamento de Pedestre,2912,2021
+80,Atropelamento de Pedestre,3045,2022
+81,Atropelamento de Pedestre,3133,2023
+82,Queda de ocupante de veículo,3622,2017
+83,Queda de ocupante de veículo,3033,2018
+84,Queda de ocupante de veículo,3324,2019
+85,Queda de ocupante de veículo,2804,2020
+86,Queda de ocupante de veículo,2594,2021
+87,Queda de ocupante de veículo,2756,2022
+88,Queda de ocupante de veículo,3101,2023
+89,Colisão lateral sentido oposto,1,2019
+90,Colisão lateral sentido oposto,9,2020
+91,Colisão lateral sentido oposto,1609,2021
+92,Colisão lateral sentido oposto,1775,2022
+93,Colisão lateral sentido oposto,2018,2023
+94,Capotamento,6943,2007
+95,Capotamento,7242,2008
+96,Capotamento,7694,2009
+97,Capotamento,8578,2010
+98,Capotamento,8766,2011
+99,Capotamento,8415,2012
+100,Capotamento,7926,2013
+101,Capotamento,7425,2014
+102,Capotamento,6551,2015
+103,Capotamento,6777,2016
+104,Capotamento,5628,2017
+105,Capotamento,2814,2018
+106,Capotamento,2279,2019
+107,Capotamento,1860,2020
+108,Capotamento,1752,2021
+109,Capotamento,1563,2022
+110,Capotamento,1504,2023
+111,Incêndio,456,2007
+112,Incêndio,490,2008
+113,Incêndio,558,2009
+114,Incêndio,674,2010
+115,Incêndio,791,2011
+116,Incêndio,858,2012
+117,Incêndio,897,2013
+118,Incêndio,870,2014
+119,Incêndio,878,2015
+120,Incêndio,984,2016
+121,Incêndio,1055,2017
+122,Incêndio,931,2018
+123,Incêndio,1115,2019
+124,Incêndio,1177,2020
+125,Incêndio,1174,2021
+126,Incêndio,1305,2022
+127,Incêndio,1463,2023
+128,Engavetamento,1196,2017
+129,Engavetamento,992,2018
+130,Engavetamento,922,2019
+131,Engavetamento,898,2020
+132,Engavetamento,1054,2021
+133,Engavetamento,1021,2022
+134,Engavetamento,1248,2023
+135,Atropelamento de Animal,2014,2017
+136,Atropelamento de Animal,1237,2018
+137,Atropelamento de Animal,1243,2019
+138,Atropelamento de Animal,1159,2020
+139,Atropelamento de Animal,978,2021
+140,Atropelamento de Animal,1072,2022
+141,Atropelamento de Animal,1129,2023
+142,Eventos atípicos,1,2019
+143,Eventos atípicos,5,2020
+144,Eventos atípicos,267,2021
+145,Eventos atípicos,339,2022
+146,Eventos atípicos,285,2023

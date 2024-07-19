@@ -1,12 +1,26 @@
+# =======================================================
+# Imports
+# =======================================================
+
 import pandas as pd
 import numpy as np
 import streamlit as st
 import altair as alt
+#import geopandas as gpd
+import matplotlib.pyplot as plt
 
+# =======================================================
+# Datasets
+# =======================================================
 df_acidentes_uf_geral = pd.read_csv('acidentes_por_uf_geral.csv', sep=',', encoding="ISO-8859-1")
 df_acidentes_tipo_geral = pd.read_csv('acidentes_por_tipo_geral.csv', sep=',', encoding="UTF-8")
 df_acidentes_br_geral = pd.read_csv('acidentes_por_br_geral.csv', sep=',', encoding="ISO-8859-1")
 df_acidentes_causa_geral = pd.read_csv('acidentes_por_causa_geral.csv', sep=',', encoding="UTF-8")
+
+# rankings
+df_ranking_uf = pd.read_csv('ranking_acidentes_uf.csv', sep=',', encoding="UTF-8")
+df_ranking_tipo = pd.read_csv('ranking_acidentes_tipo.csv', sep=',', encoding="UTF-8")
+df_ranking_br = pd.read_csv('ranking_acidentes_br.csv', sep=',', encoding="UTF-8")
 
 # =======================================================
 # Funções
@@ -110,6 +124,12 @@ def gera_grafico_por_causa(ano, contagem_por_causa_ano):
   return chart
 # =======================================================
 
+# =======================================================
+# Constantes do dashboard
+# =======================================================
+OPCAO_TODOS = 'Todos'
+COLUNA_ANO = 'ano'
+
 st.set_page_config(layout="wide")
 
 # Definir o título fixo para o painel
@@ -117,21 +137,21 @@ st.title("Acidentes nas Rodovias Federais do Brasil (2007 a 2023)")
 
 st.sidebar.markdown("# Filtros:")
 
-#Abas - Acidentes por UF | Acidentes por Tipo | Acidentes por BR |
-
 # Adiciona uma caixa de seleção no sidebar
 ano_selecionado = st.sidebar.selectbox(
     'Qual o ano deseja visualizar?',
-    ('Geral', '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009', '2008', '2007')
+    (OPCAO_TODOS, '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009', '2008', '2007')
 )
 
 print(ano_selecionado)
 
-# Adiciona uma caixa de seleção no sidebar
-mes_selecionado = st.sidebar.selectbox(
-    'Qual o mês deseja visualizar?',
-    ('Geral', 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro','Outubro','Novembro','Dezembro')
-)
+meses_selecionados = st.sidebar.multiselect(
+    'Quais meses deseja visualizar?',
+    [OPCAO_TODOS, 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro','Outubro','Novembro','Dezembro'],
+  )
+
+#st.sidebar.write("Meses selecionados:", meses_selecionados)
+print(f'Meses selecionados: {meses_selecionados}')
 
 # Add a slider to the sidebar:
 horario_acidente = st.sidebar.slider(
@@ -141,7 +161,15 @@ horario_acidente = st.sidebar.slider(
 
 # Definição de abas
 # Acidentes por UF | Acidentes por Tipo | Acidentes por BR |
-tab01, tab02, tab03, tab04, tab05, tab06 = st.tabs(["Acidentes por UF", "Acidentes por Tipo", "Acidentes por BR", "Acidentes por Causa", "Aba 05", "Aba 06"])
+tab01, tab02, tab03, tab04, tab05, tab06, tab07, tab08, tab09 = st.tabs(
+  [
+    "Acidentes por UF", "Acidentes por Tipo", 
+    "Acidentes por BR", "Acidentes por Causa", 
+    "Ranking dos Acidentes por UF", "Ranking dos Acidentes por Tipo",
+    "Ranking dos Acidentes por BR", "Ranking dos Acidentes por Causa",
+    "Mapa do Brasil"
+  ]
+)
 
 # ==============================================================================
 with tab01:
@@ -150,12 +178,12 @@ with tab01:
     titulo = f'Acidentes por UF ({ano_selecionado})'
     st.markdown(titulo, unsafe_allow_html=True)
 
-    if ano_selecionado != 'Geral':
-      df_filtrado_uf = df_acidentes_uf_geral[(df_acidentes_uf_geral['ano'] == int(ano_selecionado))]
+    if ano_selecionado != OPCAO_TODOS:
+      df_filtrado_uf = df_acidentes_uf_geral[(df_acidentes_uf_geral[COLUNA_ANO] == int(ano_selecionado))]
       grafico_aba_01 = gera_grafico_por_uf(ano_selecionado, df_filtrado_uf)
     else:
       df_filtrado_uf = df_acidentes_uf_geral
-      grafico_aba_01 = gera_grafico_por_uf('Geral', df_filtrado_uf)
+      grafico_aba_01 = gera_grafico_por_uf(OPCAO_TODOS, df_filtrado_uf)
 
     # Exibir o gráfico de barras empilhadas
     st.altair_chart(grafico_aba_01)
@@ -167,12 +195,12 @@ with tab02:
   titulo = f'Acidentes por Tipo ({ano_selecionado})'
   st.markdown(titulo, unsafe_allow_html=True)
 
-  if ano_selecionado != 'Geral':
-    df_filtrado_tipo = df_acidentes_tipo_geral[(df_acidentes_tipo_geral['ano'] == int(ano_selecionado))]
+  if ano_selecionado != OPCAO_TODOS:
+    df_filtrado_tipo = df_acidentes_tipo_geral[(df_acidentes_tipo_geral[COLUNA_ANO] == int(ano_selecionado))]
     grafico_aba_02 = gera_grafico_por_tipo(int(ano_selecionado), df_filtrado_tipo)
   else:
     df_filtrado_tipo = df_acidentes_tipo_geral
-    grafico_aba_02 = gera_grafico_por_tipo('Geral', df_filtrado_tipo)
+    grafico_aba_02 = gera_grafico_por_tipo(OPCAO_TODOS, df_filtrado_tipo)
 
   # Exibir o gráfico de barras empilhadas
   st.altair_chart(grafico_aba_02)
@@ -185,12 +213,12 @@ with tab03:
   titulo = f'Acidentes por BR ({ano_selecionado})'
   st.markdown(titulo, unsafe_allow_html=True)
 
-  if ano_selecionado != 'Geral':
-    df_filtrado_br = df_acidentes_br_geral[(df_acidentes_br_geral['ano'] == int(ano_selecionado))]
+  if ano_selecionado != OPCAO_TODOS:
+    df_filtrado_br = df_acidentes_br_geral[(df_acidentes_br_geral[COLUNA_ANO] == int(ano_selecionado))]
     grafico_aba_03 = gera_grafico_por_br(int(ano_selecionado), df_filtrado_br)
   else:
     df_filtrado_br = df_acidentes_br_geral
-    grafico_aba_03 = gera_grafico_por_br('Geral', df_filtrado_br)
+    grafico_aba_03 = gera_grafico_por_br(OPCAO_TODOS, df_filtrado_br)
 
   # Exibir o gráfico de barras empilhadas
   st.altair_chart(grafico_aba_03)
@@ -203,12 +231,12 @@ with tab04:
   titulo = f'Acidentes por Causa ({ano_selecionado})'
   st.markdown(titulo, unsafe_allow_html=True)
 
-  if ano_selecionado != 'Geral':
-    df_filtrado_causa = df_acidentes_causa_geral[(df_acidentes_causa_geral['ano'] == int(ano_selecionado))]
+  if ano_selecionado != OPCAO_TODOS:
+    df_filtrado_causa = df_acidentes_causa_geral[(df_acidentes_causa_geral[COLUNA_ANO] == int(ano_selecionado))]
     grafico_aba_04 = gera_grafico_por_causa(int(ano_selecionado), df_filtrado_causa)
   else:
     df_filtrado_causa = df_acidentes_causa_geral
-    grafico_aba_04 = gera_grafico_por_causa('Geral', df_filtrado_causa)
+    grafico_aba_04 = gera_grafico_por_causa(OPCAO_TODOS, df_filtrado_causa)
 
   # Exibir o gráfico de barras empilhadas
   st.altair_chart(grafico_aba_04)
@@ -217,14 +245,88 @@ with tab04:
 with tab05:
 
   # aba 05
-  titulo = f'Aba 05 ({ano_selecionado})'
+  titulo = f'Ranking dos Acidentes por UF entre 2007 e 2023'
   st.markdown(titulo, unsafe_allow_html=True)
 
+  # Ordenar o DataFrame por ano
+  df_ordenado_ano = df_ranking_uf.sort_values('ano')
+
+  # Criar o gráfico de linhas interativo
+  grafico_aba_05 = alt.Chart(df_ranking_uf).mark_line(point=True).encode(
+      x=alt.X('ano:N', axis=alt.Axis(title='Ano')),
+      y=alt.Y('Qtd:Q', axis=alt.Axis(title='Quantidade de Acidentes')),
+      color='UF:N',
+      tooltip=['UF', 'Qtd', 'ano']
+  ).properties(
+      title='Evolução da Quantidade de Acidentes por UF (2007-2023)',
+      width=1024, height=500
+  ).add_selection(
+      alt.selection_single(fields=['ano'], bind='legend')
+  ).interactive()
+
+  st.altair_chart(grafico_aba_05)
+  
 # ==============================================================================
 with tab06:
 
   # aba 06
-  titulo = f'Aba 06 ({ano_selecionado})'
+  titulo = f'Ranking dos Acidentes por Tipo entre 2007 e 2023'
+  st.markdown(titulo, unsafe_allow_html=True)
+
+  # Ordenar o DataFrame por ano
+  df_ordenado_ano = df_ranking_uf.sort_values('ano')
+
+  # Criar o gráfico de linhas interativo
+  grafico_aba_06 = alt.Chart(df_ranking_tipo).mark_line(point=True).encode(
+      x=alt.X('ano:N', axis=alt.Axis(title='Ano')),
+      y=alt.Y('qtd:Q', axis=alt.Axis(title='Quantidade de Acidentes')),
+      color='tipo_acidente:N',
+      tooltip=['tipo_acidente', 'qtd', 'ano']
+  ).properties(
+      title='Evolução da Quantidade de Acidentes por Tipo (2007-2023)',
+      width=1024, height=500
+  ).add_selection(
+      alt.selection_single(fields=['ano'], bind='legend')
+  ).interactive()
+
+  st.altair_chart(grafico_aba_06)
+
+# ==============================================================================
+with tab07:
+
+  # aba 07
+  titulo = f'Ranking dos Acidentes por BR entre 2007 e 2023'
+  st.markdown(titulo, unsafe_allow_html=True)
+
+  # Ordenar o DataFrame por ano
+  df_ordenado_ano = df_ranking_br.sort_values('ano')
+
+  # Criar o gráfico de linhas interativo
+  grafico_aba_07 = alt.Chart(df_ranking_br).mark_line(point=True).encode(
+      x=alt.X('ano:N', axis=alt.Axis(title='Ano')),
+      y=alt.Y('qtd:Q', axis=alt.Axis(title='Quantidade de Acidentes')),
+      color='br:N',
+      tooltip=['br', 'qtd', 'ano']
+  ).properties(
+      title='Evolução da Quantidade de Acidentes por BR (2007-2023)',
+      width=1024, height=500
+  ).add_selection(
+      alt.selection_single(fields=['ano'], bind='legend')
+  ).interactive()
+
+  st.altair_chart(grafico_aba_07)
+
+# ==============================================================================
+with tab08:
+
+  # aba 08
+  titulo = f'Ranking dos Acidentes por Causa entre 2007 e 2023'
+  st.markdown(titulo, unsafe_allow_html=True)
+
+with tab09:
+
+  # aba 09
+  titulo = f'Mapa do Brasil'
   st.markdown(titulo, unsafe_allow_html=True)
 
 # ==============================================================================
