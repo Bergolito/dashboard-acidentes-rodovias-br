@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import altair as alt
-#import geopandas as gpd
 import matplotlib.pyplot as plt
 
 # =======================================================
