@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import altair as alt
-#import matplotlib.pyplot as plt
 
 # =======================================================
 # Datasets
@@ -16,8 +15,10 @@ df_acidentes_tipo_geral = pd.read_csv('acidentes_por_tipo_geral.csv', sep=',', e
 df_acidentes_br_geral = pd.read_csv('acidentes_por_br_geral.csv', sep=',', encoding="ISO-8859-1")
 df_acidentes_causa_geral = pd.read_csv('acidentes_por_causa_geral.csv', sep=',', encoding="UTF-8")
 
-# acidentes_por_br_apenas_25_brs.csv
+# Limitando as Brs apenas as 25 com mais registros
 acidentes_por_br_apenas_25_brs = pd.read_csv('acidentes_por_br_apenas_25_brs.csv', sep=',', encoding="UTF-8")
+# Limitando as causa apenas as 30 com mais registros
+acidentes_por_causa_apenas_30 = pd.read_csv('acidentes_por_causa_apenas_30.csv', sep=',', encoding="UTF-8")
 
 # =======================================================
 # Rankings
@@ -26,19 +27,6 @@ acidentes_por_br_apenas_25_brs = pd.read_csv('acidentes_por_br_apenas_25_brs.csv
 df_ranking_uf = pd.read_csv('ranking_acidentes_uf.csv', sep=',', encoding="UTF-8")
 df_ranking_tipo = pd.read_csv('ranking_acidentes_tipo.csv', sep=',', encoding="UTF-8")
 df_ranking_br = pd.read_csv('ranking_acidentes_br.csv', sep=',', encoding="UTF-8")
-
-# =======================================================
-# Pré-Processamento dos dataframes
-# =======================================================
-
-# Removendo as linhas que tem o valor '(null)' na coluna 'UF'
-#print(f'Antes = {df_acidentes_uf_geral.shape[0]}')
-#df_acidentes_uf_geral = df_acidentes_uf_geral.loc[df_acidentes_uf_geral['UF'] != '(null)']
-#print(f'Depois = {df_acidentes_uf_geral.shape[0]}')
-#df_acidentes_uf_geral.to_csv('acidentes_por_uf_geral2.csv')
-
-
-
 
 # =======================================================
 # Funções
@@ -234,17 +222,13 @@ with tab02:
 with tab03:
 
   # aba 03
-  print('Aba 03')
   titulo = f'Acidentes por BR ({ano_selecionado})'
   st.markdown(titulo, unsafe_allow_html=True)
 
   if ano_selecionado != OPCAO_TODOS:
-    #acidentes_por_br_apenas_25_brs
-    #df_filtrado_br = df_acidentes_br_geral[(df_acidentes_br_geral[COLUNA_ANO] == int(ano_selecionado))]
     df_filtrado_br = acidentes_por_br_apenas_25_brs[(acidentes_por_br_apenas_25_brs[COLUNA_ANO] == int(ano_selecionado))]
     grafico_aba_03 = gera_grafico_por_br(int(ano_selecionado), df_filtrado_br)
   else:
-    #df_filtrado_br = df_acidentes_br_geral
     df_filtrado_br = acidentes_por_br_apenas_25_brs
     grafico_aba_03 = gera_grafico_por_br(OPCAO_TODOS, df_filtrado_br)
 
@@ -255,15 +239,14 @@ with tab03:
 with tab04:
 
   # aba 04
-  print('Aba 04')
   titulo = f'Acidentes por Causa ({ano_selecionado})'
   st.markdown(titulo, unsafe_allow_html=True)
 
   if ano_selecionado != OPCAO_TODOS:
-    df_filtrado_causa = df_acidentes_causa_geral[(df_acidentes_causa_geral[COLUNA_ANO] == int(ano_selecionado))]
+    df_filtrado_causa = acidentes_por_causa_apenas_30[(acidentes_por_causa_apenas_30[COLUNA_ANO] == int(ano_selecionado))]
     grafico_aba_04 = gera_grafico_por_causa(int(ano_selecionado), df_filtrado_causa)
   else:
-    df_filtrado_causa = df_acidentes_causa_geral
+    df_filtrado_causa = acidentes_por_causa_apenas_30
     grafico_aba_04 = gera_grafico_por_causa(OPCAO_TODOS, df_filtrado_causa)
 
   # Exibir o gráfico de barras empilhadas

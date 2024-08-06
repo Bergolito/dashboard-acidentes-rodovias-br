@@ -1,0 +1,222 @@
+Unnamed: 0,causa_acidente,qtd,ano
+0,Outras,45968,2007
+1,Falta de atenção,42256,2007
+2,Não guardar distância de segurança,8137,2007
+3,Velocidade incompatível,6011,2007
+4,Defeito mecânico em veículo,5403,2007
+5,Animais na Pista,4202,2007
+6,Desobediência à sinalização,4041,2007
+7,Dormindo,3364,2007
+8,Ingestão de álcool,3106,2007
+9,Ultrapassagem indevida,2839,2007
+10,Defeito na via,2348,2007
+0,Outras,49971,2008
+1,Falta de atenção,46307,2008
+2,Não guardar distância de segurança,9742,2008
+3,Velocidade incompatível,7915,2008
+4,Defeito mecânico em veículo,5858,2008
+5,Desobediência à sinalização,4592,2008
+6,Animais na Pista,4582,2008
+7,Ingestão de álcool,3561,2008
+8,Dormindo,3330,2008
+9,Ultrapassagem indevida,2994,2008
+10,Defeito na via,2191,2008
+0,Outras,55549,2009
+1,Falta de atenção,52070,2009
+2,Não guardar distância de segurança,11476,2009
+3,Velocidade incompatível,10324,2009
+4,Defeito mecânico em veículo,6019,2009
+5,Desobediência à sinalização,5171,2009
+6,Ingestão de álcool,4813,2009
+7,Animais na Pista,4205,2009
+8,Dormindo,3335,2009
+9,Ultrapassagem indevida,3073,2009
+10,Defeito na via,2611,2009
+0,Falta de atenção,60879,2010
+1,Outras,56871,2010
+2,Não guardar distância de segurança,15588,2010
+3,Velocidade incompatível,13673,2010
+4,Desobediência à sinalização,7157,2010
+5,Defeito mecânico em veículo,6944,2010
+6,Ingestão de álcool,6806,2010
+7,Animais na Pista,4803,2010
+8,Dormindo,4402,2010
+9,Ultrapassagem indevida,3932,2010
+10,Defeito na via,2414,2010
+0,Falta de atenção,63526,2011
+1,Outras,56505,2011
+2,Não guardar distância de segurança,17311,2011
+3,Velocidade incompatível,16169,2011
+4,Desobediência à sinalização,7823,2011
+5,Ingestão de álcool,7559,2011
+6,Defeito mecânico em veículo,6981,2011
+7,Animais na Pista,5008,2011
+8,Dormindo,4404,2011
+9,Ultrapassagem indevida,4249,2011
+10,Defeito na via,2790,2011
+0,Falta de atenção,61205,2012
+1,Outras,49582,2012
+2,Não guardar distância de segurança,18804,2012
+3,Velocidade incompatível,16830,2012
+4,Desobediência à sinalização,7789,2012
+5,Ingestão de álcool,7594,2012
+6,Defeito mecânico em veículo,6831,2012
+7,Animais na Pista,4834,2012
+8,Dormindo,4625,2012
+9,Ultrapassagem indevida,4134,2012
+10,Defeito na via,2339,2012
+0,Falta de atenção,62854,2013
+1,Outras,44055,2013
+2,Não guardar distância de segurança,21571,2013
+3,Velocidade incompatível,18694,2013
+4,Desobediência à sinalização,8078,2013
+5,Ingestão de álcool,7527,2013
+6,Defeito mecânico em veículo,7162,2013
+7,Dormindo,4827,2013
+8,Animais na Pista,4768,2013
+9,Ultrapassagem indevida,4472,2013
+10,Defeito na via,2740,2013
+0,Falta de atenção,55089,2014
+1,Outras,38990,2014
+2,Não guardar distância de segurança,19588,2014
+3,Velocidade incompatível,17716,2014
+4,Desobediência à sinalização,8167,2014
+5,Ingestão de álcool,7391,2014
+6,Defeito mecânico em veículo,6886,2014
+7,Dormindo,4794,2014
+8,Ultrapassagem indevida,4245,2014
+9,Animais na Pista,3737,2014
+10,Defeito na via,2598,2014
+0,Falta de atenção,36805,2015
+1,Outras,29064,2015
+2,Velocidade incompatível,14262,2015
+3,Não guardar distância de segurança,11402,2015
+4,Ingestão de álcool,6745,2015
+5,Desobediência à sinalização,6015,2015
+6,Defeito mecânico em veículo,5729,2015
+7,Dormindo,4067,2015
+8,Animais na Pista,3080,2015
+9,Ultrapassagem indevida,2998,2015
+10,Defeito na via,1994,2015
+0,Falta de atenção,26451,2016
+1,Outras,24668,2016
+2,Velocidade incompatível,12322,2016
+3,Não guardar distância de segurança,6361,2016
+4,Ingestão de álcool,6332,2016
+5,Defeito mecânico em veículo,5111,2016
+6,Desobediência à sinalização,4852,2016
+7,Dormindo,3763,2016
+8,Animais na Pista,2605,2016
+9,Ultrapassagem indevida,2327,2016
+10,Defeito na via,1571,2016
+0,Falta de Atenção à Condução,34510,2017
+1,Velocidade Incompatível,10432,2017
+2,Ingestão de Álcool,6448,2017
+3,Não guardar distância de segurança,5837,2017
+4,Desobediência às normas de trânsito pelo condutor,5219,2017
+5,Defeito Mecânico no Veículo,4649,2017
+6,Pista Escorregadia,4253,2017
+7,Condutor Dormindo,3798,2017
+8,Animais na Pista,2624,2017
+9,Falta de Atenção do Pedestre,2390,2017
+10,Ultrapassagem Indevida,2054,2017
+11,Avarias e/ou desgaste excessivo no pneu,1588,2017
+22,Reação tardia ou ineficiente do condutor,1,2017
+0,Falta de Atenção à Condução,25841,2018
+1,Desobediência às normas de trânsito pelo condutor,7194,2018
+2,Velocidade Incompatível,6850,2018
+3,Ingestão de Álcool,5203,2018
+4,Não guardar distância de segurança,4266,2018
+5,Defeito Mecânico no Veículo,3717,2018
+6,Condutor Dormindo,2633,2018
+7,Pista Escorregadia,2549,2018
+8,Falta de Atenção do Pedestre,2074,2018
+9,Animais na Pista,1618,2018
+10,Ultrapassagem Indevida,1333,2018
+12,Avarias e/ou desgaste excessivo no pneu,1011,2018
+24,Ingestão de álcool pelo condutor,51,2018
+27,Reação tardia ou ineficiente do condutor,1,2018
+28,Desrespeitar a preferência no cruzamento,1,2018
+0,Falta de Atenção à Condução,25030,2019
+1,Desobediência às normas de trânsito pelo condutor,8106,2019
+2,Velocidade Incompatível,6032,2019
+3,Ingestão de Álcool,5420,2019
+4,Não guardar distância de segurança,4222,2019
+5,Defeito Mecânico no Veículo,3742,2019
+6,Condutor Dormindo,2483,2019
+7,Pista Escorregadia,2191,2019
+8,Falta de Atenção do Pedestre,1971,2019
+9,Animais na Pista,1534,2019
+10,Ultrapassagem Indevida,1175,2019
+12,Avarias e/ou desgaste excessivo no pneu,801,2019
+24,Ingestão de álcool pelo condutor,57,2019
+25,Transitar na contramão,3,2019
+26,Demais falhas mecânicas ou elétricas,3,2019
+29,Ausência de reação do condutor,1,2019
+35,Reação tardia ou ineficiente do condutor,1,2019
+0,Falta de Atenção à Condução,22408,2020
+1,Desobediência às normas de trânsito pelo condutor,8800,2020
+2,Velocidade Incompatível,5887,2020
+3,Ingestão de Álcool,5070,2020
+4,Defeito Mecânico no Veículo,3742,2020
+5,Não guardar distância de segurança,3606,2020
+6,Condutor Dormindo,2110,2020
+7,Pista Escorregadia,2018,2020
+8,Falta de Atenção do Pedestre,1641,2020
+9,Animais na Pista,1413,2020
+10,Ultrapassagem Indevida,1085,2020
+12,Avarias e/ou desgaste excessivo no pneu,904,2020
+24,Ingestão de álcool pelo condutor,60,2020
+25,Reação tardia ou ineficiente do condutor,34,2020
+26,Ausência de reação do condutor,28,2020
+27,Condutor deixou de manter distância do veículo da frente,22,2020
+28,Manobra de mudança de faixa,20,2020
+29,Acessar a via sem observar a presença dos outros veículos,18,2020
+30,Transitar na contramão,14,2020
+31,Demais falhas mecânicas ou elétricas,13,2020
+32,Desrespeitar a preferência no cruzamento,8,2020
+0,Reação tardia ou ineficiente do condutor,6909,2021
+1,Velocidade Incompatível,6742,2021
+2,Ausência de reação do condutor,5615,2021
+3,Acessar a via sem observar a presença dos outros veículos,5198,2021
+4,Condutor deixou de manter distância do veículo da frente,5120,2021
+5,Ingestão de álcool pelo condutor,4589,2021
+6,Manobra de mudança de faixa,3719,2021
+7,Demais falhas mecânicas ou elétricas,2726,2021
+8,Condutor Dormindo,2311,2021
+9,Transitar na contramão,1782,2021
+10,Desrespeitar a preferência no cruzamento,1749,2021
+11,Ultrapassagem Indevida,1649,2021
+13,Avarias e/ou desgaste excessivo no pneu,1256,2021
+14,Animais na Pista,1214,2021
+18,Pista Escorregadia,680,2021
+0,Reação tardia ou ineficiente do condutor,8418,2022
+1,Ausência de reação do condutor,7556,2022
+2,Acessar a via sem observar a presença dos outros veículos,5590,2022
+3,Velocidade Incompatível,5004,2022
+4,Ingestão de álcool pelo condutor,4350,2022
+5,Condutor deixou de manter distância do veículo da frente,4336,2022
+6,Manobra de mudança de faixa,3581,2022
+7,Demais falhas mecânicas ou elétricas,2684,2022
+8,Condutor Dormindo,2165,2022
+9,Transitar na contramão,2064,2022
+10,Ultrapassagem Indevida,1593,2022
+11,Desrespeitar a preferência no cruzamento,1467,2022
+12,Animais na Pista,1274,2022
+13,Avarias e/ou desgaste excessivo no pneu,1174,2022
+20,Pista Escorregadia,617,2022
+0,Reação tardia ou ineficiente do condutor,9855,2023
+1,Ausência de reação do condutor,9326,2023
+2,Acessar a via sem observar a presença dos outros veículos,6325,2023
+3,Condutor deixou de manter distância do veículo da frente,4272,2023
+4,Velocidade Incompatível,4240,2023
+5,Manobra de mudança de faixa,3912,2023
+6,Ingestão de álcool pelo condutor,3599,2023
+7,Demais falhas mecânicas ou elétricas,2940,2023
+8,Transitar na contramão,2364,2023
+9,Condutor Dormindo,2094,2023
+10,Ultrapassagem Indevida,1619,2023
+11,Animais na Pista,1328,2023
+12,Desrespeitar a preferência no cruzamento,1306,2023
+13,Avarias e/ou desgaste excessivo no pneu,1270,2023
+23,Pista Escorregadia,533,2023
