@@ -16,10 +16,29 @@ df_acidentes_tipo_geral = pd.read_csv('acidentes_por_tipo_geral.csv', sep=',', e
 df_acidentes_br_geral = pd.read_csv('acidentes_por_br_geral.csv', sep=',', encoding="ISO-8859-1")
 df_acidentes_causa_geral = pd.read_csv('acidentes_por_causa_geral.csv', sep=',', encoding="UTF-8")
 
-# rankings
+# acidentes_por_br_apenas_25_brs.csv
+acidentes_por_br_apenas_25_brs = pd.read_csv('acidentes_por_br_apenas_25_brs.csv', sep=',', encoding="UTF-8")
+
+# =======================================================
+# Rankings
+# =======================================================
+
 df_ranking_uf = pd.read_csv('ranking_acidentes_uf.csv', sep=',', encoding="UTF-8")
 df_ranking_tipo = pd.read_csv('ranking_acidentes_tipo.csv', sep=',', encoding="UTF-8")
 df_ranking_br = pd.read_csv('ranking_acidentes_br.csv', sep=',', encoding="UTF-8")
+
+# =======================================================
+# Pré-Processamento dos dataframes
+# =======================================================
+
+# Removendo as linhas que tem o valor '(null)' na coluna 'UF'
+#print(f'Antes = {df_acidentes_uf_geral.shape[0]}')
+#df_acidentes_uf_geral = df_acidentes_uf_geral.loc[df_acidentes_uf_geral['UF'] != '(null)']
+#print(f'Depois = {df_acidentes_uf_geral.shape[0]}')
+#df_acidentes_uf_geral.to_csv('acidentes_por_uf_geral2.csv')
+
+
+
 
 # =======================================================
 # Funções
@@ -27,7 +46,20 @@ df_ranking_br = pd.read_csv('ranking_acidentes_br.csv', sep=',', encoding="UTF-8
 def agrupamento_acidentes_por_ano_por_uf(df):
   contagem_por_uf = df['uf'].value_counts().reset_index()
   contagem_por_uf.columns = ['UF', 'Qtd']
+
   return contagem_por_uf
+# =======================================================
+def agrupamento_acidentes_por_ano_por_br(df, qtd):
+  grouped_df = df.groupby('br')['qtd'].sum()
+  grouped_df = grouped_df.sort_values(ascending=False)
+
+  return grouped_df[:qtd]
+# =======================================================
+def contagem_por_tipo_acidente(df_ocorrencia_acidentes):
+  contagem_por_tipo = df_ocorrencia_acidentes['tipo_acidente'].value_counts().reset_index(name='qtd').rename(columns={'index': 'UF'})
+  contagem_por_tipo.columns = ['tipo_acidente', 'qtd']
+
+  return contagem_por_tipo
 # =======================================================
 def gera_grafico_por_uf(ano, contagem_por_uf_ano):
 
@@ -49,12 +81,6 @@ def gera_grafico_por_uf(ano, contagem_por_uf_ano):
   ).interactive()
 
   return chart_uf
-# =======================================================
-def contagem_por_tipo_acidente(df_ocorrencia_acidentes):
-  contagem_por_tipo = df_ocorrencia_acidentes['tipo_acidente'].value_counts().reset_index(name='qtd').rename(columns={'index': 'UF'})
-  contagem_por_tipo.columns = ['tipo_acidente', 'qtd']
-
-  return contagem_por_tipo
 # =======================================================
 def gera_grafico_por_tipo(ano, contagem_por_tipo_ano):
 
@@ -213,10 +239,13 @@ with tab03:
   st.markdown(titulo, unsafe_allow_html=True)
 
   if ano_selecionado != OPCAO_TODOS:
-    df_filtrado_br = df_acidentes_br_geral[(df_acidentes_br_geral[COLUNA_ANO] == int(ano_selecionado))]
+    #acidentes_por_br_apenas_25_brs
+    #df_filtrado_br = df_acidentes_br_geral[(df_acidentes_br_geral[COLUNA_ANO] == int(ano_selecionado))]
+    df_filtrado_br = acidentes_por_br_apenas_25_brs[(acidentes_por_br_apenas_25_brs[COLUNA_ANO] == int(ano_selecionado))]
     grafico_aba_03 = gera_grafico_por_br(int(ano_selecionado), df_filtrado_br)
   else:
-    df_filtrado_br = df_acidentes_br_geral
+    #df_filtrado_br = df_acidentes_br_geral
+    df_filtrado_br = acidentes_por_br_apenas_25_brs
     grafico_aba_03 = gera_grafico_por_br(OPCAO_TODOS, df_filtrado_br)
 
   # Exibir o gráfico de barras empilhadas
